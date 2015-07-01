@@ -11,7 +11,7 @@ import android.widget.EditText;
 
 public class MainActivity extends ActionBarActivity {
     //作为putExtra()的第一个参数--键名
-    private final static String EXTRA_MESSAGE="com.dlut.learntabbedactivity.MESSAGE";
+    public final static String EXTRA_MESSAGE="com.dlut.learntabbedactivity.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
     }
     public void sendMessage(View view){
-        Intent intent = new Intent(this, TabbedActivity.class);
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
         EditText editText = (EditText) findViewById(R.id.edit_message);
         //把EditText的文本内容关联到一个本地 message 变量
         String message = editText.getText().toString();
