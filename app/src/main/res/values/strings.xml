@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LearnTabbedActivity</string>
+
+    <string name="edit_message">输入一段话</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name = "hello_world">hello world</string>
+</resources>
