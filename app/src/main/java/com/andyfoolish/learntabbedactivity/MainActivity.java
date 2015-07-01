@@ -28,6 +28,14 @@ public class MainActivity extends ActionBarActivity {
         //运行这个方法，系统收到我们的请求后会实例化在Intent中指定的Activity
         startActivity(intent);
     }
+    public void startActionBarActivity(View view){
+        Intent intent = new Intent(this, ShowActionBarActivity.class);
+        startActivity(intent);
+    }
+    public void startTabbedActivity(View view){
+        Intent intent = new Intent(this, TabbedActivity.class);
+        startActivity(intent);
+    }
 
 
 }
