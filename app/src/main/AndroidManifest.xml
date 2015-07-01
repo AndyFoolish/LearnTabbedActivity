@@ -20,6 +20,14 @@
             android:name=".TabbedActivity"
             android:label="@string/title_activity_tabbed" >
         </activity>
+        <activity
+            android:name=".DisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.andyfoolish.learntabbedactivity.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
