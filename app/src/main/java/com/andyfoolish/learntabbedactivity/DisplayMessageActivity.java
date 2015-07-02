@@ -1,5 +1,6 @@
 package com.andyfoolish.learntabbedactivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -8,14 +9,14 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 
-public class DisplayMessageActivity extends ActionBarActivity {
+public class DisplayMessageActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_message);
-        //²»¹ÜÓÃ»§µ¼º½µ½ÄÄ£¬Ã¿¸öActivity¶¼ÊÇÍ¨¹ıIntent±»µ÷ÓÃµÄ¡£
-        // ÎÒÃÇ¿ÉÒÔÍ¨¹ıµ÷ÓÃgetIntent()À´»ñÈ¡Æô¶¯activityµÄIntent¼°Æä°üº¬µÄÊı¾İ¡£
+        //ä¸ç®¡ç”¨æˆ·å¯¼èˆªåˆ°å“ªï¼Œæ¯ä¸ªActivityéƒ½æ˜¯é€šè¿‡Intentè¢«è°ƒç”¨çš„ã€‚
+        // æˆ‘ä»¬å¯ä»¥é€šè¿‡è°ƒç”¨getIntent()æ¥è·å–å¯åŠ¨activityçš„IntentåŠå…¶åŒ…å«çš„æ•°æ®ã€‚
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
         TextView textView = (TextView) findViewById(R.id.show_message);

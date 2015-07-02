@@ -6,7 +6,9 @@
     <string name="button_actionbar">启动ActionBar</string>
     <string name="button_tabbed">启动Tabbed</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">设置</string>
+    <string name="action_search">搜索</string>
+
     <string name="title_activity_tabbed">TabbedActivity</string>
 
     <string name="title_section1">Section 1</string>
